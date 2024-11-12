@@ -1,0 +1,105 @@
+
+
+/* Calculator styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 700px;
+    padding: 50px 60px;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container header {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.container .display {
+    display: flex;
+    height: 120px;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+.container .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+.container form .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+form .buttons input[type="button"] {
+    height: 280px;
+    width: 280px;
+    font-size: 80px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+form .buttons input[type="button"]:hover {
+    opacity: 0.9;
+}
+
+form .buttons input[type="button"][data-value="equal"] {
+    grid-row: span 2;
+    height: 100%;
+}
+
+form .buttons input[type="button"][data-value="clear"] {
+    grid-column: span 2;
+    width: 100%;
+}
+
+form .buttons input[type="button"][data-value="zero"] {
+    width: 100%;
+}
+
+form .buttons input[type="button"][data-value="decimal"] {
+    width: 100%;
+}
+
+form .buttons input[type="button"][data-value="negative"] {
+    width: 100%;
+}
+
+form .buttons input[type="button"][data-value="percent"] {
+    width: 100%;
+}
+
+form .buttons input[type="button"][data-value="backspace"] {
+    width: 100%;
+}
+
+form .buttons input[type="button"][data-value="delete"] {
+    width: 100%;
+}
+
+form .buttons input[type="button"][data-value="clear"] {
+    width: 100%;
+}
+

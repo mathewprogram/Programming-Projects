@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">SCV - Short Curriculum Vitae</h1>
+    <form id="survey-form">
+        <p id="description">Thank you for completing this CV! </p>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input id="name" type="text" required placeholder="Enter your full name">
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" required placeholder="Enter your email">
+
+            <label for="age">Age:</label>
+            <input id="age" type="number" min="18" max="120" placeholder="Age">
+
+            <p>Current Situation:</p>
+            <label for="learner"><input id="learner" type="checkbox" value="Full Time Learner" class="inline">Full Time Learner</label>
+            <label for="worker"><input id="worker" type="checkbox" value="Full Time Worker" class="inline">Full Time Worker</label>
+            <label for="student"><input id="student" type="checkbox" value="Full Time Student" class="inline">Full Time Student</label>
+
+            <p>Would you recommend this CV?</p>
+            <label><input type="radio" class="inline" name="recommend" value="Definitely" />Definitely</label>
+            <label><input type="radio" class="inline" name="recommend" value="Maybe" />Maybe</label>
+            <label><input type="radio" class="inline" name="recommend" value="Not Sure" />Not Sure</label>
+
+            <p>How did you hear about us?</p>
+            <label for="hear-about">How did you hear about us?</label>
+            <select id="hear-about" name="hear-about">
+                <option value="">(select one)</option>
+                <option value="freeCodeCamp Youtube">freeCodeCamp Youtube</option>
+                <option value="freeCodeCamp Forum">freeCodeCamp Forum</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <p>Additions to CV:</p>
+            <textarea placeholder="What would you add to this short CV"></textarea>
+
+            <button type="submit">Submit</button>
+            <!-- Optional reset button -->
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
